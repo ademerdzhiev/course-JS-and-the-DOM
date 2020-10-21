@@ -2,7 +2,7 @@ document.addEventListener('click', function () {
   console.log("click, click");
 })
 
-let startingTime = performance.now();
+const startingTime = performance.now();
 
 for (let i = 0; i < 100; i++) {
   for (let j = 0; j < 100; j++) {
@@ -10,6 +10,6 @@ for (let i = 0; i < 100; i++) {
   }
 }
 
-let endingTime = performance.now();
+const endingTime = performance.now();
 
 console.log('This code took ' + (endingTime - startingTime) + ' miliseconds to run');
